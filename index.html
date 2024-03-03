@@ -18,19 +18,20 @@
 		<link href="fontawesome.css/css/all.min.css" rel="stylesheet" type="text/css"/>
 	<title>My Personal Website</title>
 	<style type="text/css">
-		#mymenu{background-color:#FFFFFF;}
-	a .nav.item{color:#000000;}
-	.nav-link{color:#OOOOOO;
+		*{font-family: poppins,sans-serif;}
+		#mymenu{background-color:#000000;}
+	a .nav.item{color:#fff;}
+	.nav-link{color:#fff;
 			font-weight: bolder;
 			margin-right:50px;}
 			.nav-link:hover{color:#00B4D8;
 			text-decoration:underline;
 			font-weight:bolder;}
 			#fullstack{text-shadow:3px 3px 2px #03045E;
-						font-size:3em;}
-		#main_container{background-image:linear-gradient(rgba(255,255,255,0.7),rgba(231,207,228,0.7)), url("images/light.png");
+						font-size:6em;color:#00b4d8}
+		#main_container{background-image:linear-gradient(rgba(0,0,0,0),rgba(0,0,0,0)), url("images/light.png");
 			background-repeat:no-repeat;}
-			div{ min-height:50px;border:1px solid red;}
+			div{ min-height:50px;}
 
 			.dropdown-menu li a:hover{color:#03045E;
 			text-decoration:underline;
@@ -39,11 +40,112 @@
 						font-size:3em;}
 						#inlink{color:#00B4D8;
      	text-decoration: none;}
-     	#skills{justify-content: space-around;}
+     	     	#skills div{justify-content: space-around;border-radius: 10px;
+     	background-color: #caf0f8;padding: 40px;font-weight: 300;margin-bottom: 20px;margin-right: 20px; font-size: 13px;
+     display:grid;
+     		grid-gap: 40px;
+     		grid-template-columns: repeat(auto-fit,minmax(250px,1fr));}
+     	#skillarea div{justify-content: space-around;border-radius: 10px;
+     	background-color: #caf0f8;margin-bottom: 20px;margin-right: 5px; font-size: 13px;
+     		display:grid;
+     		grid-gap: 40px;
+     		grid-template-columns: repeat(auto-fit,minmax(250px,1fr));
+     	}
+     	#skills div:hover{color:white;background-color: #03045e;}
+     	#skillarea div:hover{color:white;background-color: #03045e;}
+     	#portfolio{display:grid;
+     		grid-gap: 40px;
+     		grid-template-columns: repeat(auto-fit,minmax(250px,1fr));
+     		margin-top: 50px;}
+
+     		#work{border-radius: 10px;
+     			position:relative;
+     			overflow:hidden;}
+
+     			#work img{width:100%;
+     				display:flex;
+     				border-radius: 10px;}
+
+     			.layer{
+     				width:100%;
+     				background:linear-gradient(rgba(0,0,0,0.6), #00B4D8);
+     				border-radius: 10px;
+     				align-items: center;
+     				justify-content: center;
+     				padding:0px 40px;
+     				text-align: center;
+     				font-size: 14px;
+     				color:#fff;
+
+     			}
+     			.layer h3{
+     				font-weight: bolder;
+     				margin-bottom: 20px;
+     				color:#03045e;
+     			}
+     			.layer a{
+     				margin-top: 20px;
+     				color:#03045e;
+     				text-decoration:none;
+     				font-size: 18px;
+     				background: #fff;
+     				width:60px;
+     				border-radius: 50%;
+     				text-align: center;
+     			}
+
+
+
+     			.seemore{
+     				display:block;
+     				margin:50px auto;
+     				width:fit-content;
+     				border:1px solid #00b4d8;
+     				padding: 14px 50px;
+     				border-radius: 6px;
+     				text-decoration: none;
+     				color:#fff;
+     			}
+
+     			.seemore:hover{
+     				background-color: #00b4d8;
+     			}
+
+     			.education:hover{color:black;
+     				background-color: #caf0f8;
+     				padding:20px;margin:20px}
+     			 .experiences:hover{color:black;
+     			 	background-color: #caf0f8;
+     			 	padding:20px;
+     			 	margin:20px}
+
+     			 	.socialicons a{
+     			 		text-decoration: none;
+     			 		font-size: 30px;
+     			 		padding-top: -20px;
+     			 		margin-right: 20px;
+     			 		justify-content:center;	}
+
+     			 		@font-face {
+  font-family: myFirstFont;
+  src: url(downloaded fonts/cabin and biorhyme/biorhyme/biorhyme-bold-webfont.woff2);
+}
+
+h1{
+  font-family: myFirstFont;
+}
+		@font-face {
+  font-family: mysecondFont;
+  src: url(downloaded fonts/cabin and biorhyme/biorhyme/biorhyme-extrabold-webfont.woff2);
+}
+
+h3{
+  font-family: mysecondFont;
+}
 
 	</style>
 </head>
-<body>
+<body style="background-color: #080808;">
 	<div class="container" id="main_container">
 				<div  class="row">
 				<div class="col">
@@ -63,19 +165,19 @@
 </a>
         </li>
         <li class="nav-item">
-          <a class="nav-link active" aria-current="page" href="mywebsiteindex.html" style="color:#00B4D8;">Home</a>
+          <a class="nav-link active" aria-current="page" href="#main_container" style="color:#00B4D8;">Home</a>
         </li>
 
         <li class="nav-item">
-          <a class="nav-link" href="aboutme.html">About</a>
+          <a class="nav-link" href="#aboutarea">About</a>
         </li>
 
         <li class="nav-item">
-          <a class="nav-link" href="portfolio.html">Portfolio</a>
+          <a class="nav-link" href="#portfolioarea">Portfolio</a>
         </li>
 
         <li class="nav-item">
-          <a class="nav-link" href="contactme.html">Contact</a>
+          <a class="nav-link" href="#contactme">Contact</a>
         </li>
         <li class="nav-item dropdown">
           <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
@@ -103,21 +205,20 @@
 				</div>
 
 				<div  class="row" style="align-items: center;">
-				<div class="col-lg text-dark" style="padding-left:150px;padding-top: 50px;padding-bottom: 50px;">
+				<div class="col-lg text-light" style="padding-left:200px;padding-top: 20px;padding-bottom: 20px;">
 				<h3 >FULL-STACK SOFTWARE DEVELOPER</h3>
 				<h1 id="fullstack">Racheal Chi</h1>
 				<h3>Hi, welcome to my personal website</h3>
-				<p>I'm a Lagos-based software developer</p>
-				<p>I can help you solve a problem,build a project or grow existing project.</p>
+				<p>I'm a Lagos-based software developer. I can help you solve a problem,build a project or grow existing project.</p>
 				<button class="btn btn-outline-primary text-primary" type="submit" style="background-color:#CAF0F8;">Hire Me</button>
 					</div>
-					<div class="col-lg">
-						<img src="images/boldimg.png" alt="profile image" style="width:100%; padding-left: 100px;margin-right: 50px;" class="rounded-circle"/>
+					<div class="col-lg-7">
+						<img src="images/boldimg.png" alt="profile image" style="width:100%; background-position: center;background-size: cover;padding-bottom: 20px;" class=""/>
 
 					</div>	
 				</div>
 				
-				<div  class="row">
+				<div  class="row" id="aboutarea">
 				
 					<div class="col" style="background-color: #03045E;">
 						<h1 class="text-light">About</h1>
@@ -135,13 +236,13 @@
 				<div  class="row" >
 				
 					<div class="col">
-						<h1 class="text-dark" style="text-align: center">My Skills</h1>
+						<h1 class="text-light" style="text-align: center; padding: 20px;">My Skills</h1>
 					</div>	
 				</div>
 				
 				<div  class="row" id="skills">
 				
-					<div class="col-lg">
+					<div class="col-lg" style="margin-left: 20px;">
 						<img src="images/python.png" alt="icon" style="justify-content:center; padding-left:100px"/>
 						
 					</div>
@@ -149,16 +250,16 @@
 								<img src="images/java.png" alt="icon" style="align-items:center;padding-left:100px"/>
 								<h3 style="text-align: center">Javascript</h3>
 					</div>
-					<div class="col-lg">
+					<div class="col-lg" >
 							<img src="images/css.png" alt="icon" style="align-items:center;padding-left:100px"/>
 							<h3 style="text-align: center">Css</h3>
 					</div>
 				
 				</div>
 				
-				<div  class="row">
+				<div  class="row" id="skillarea">
 				
-					<div class="col-lg col-md-6 ">
+					<div class="col-lg col-md-6 " style="margin-left: 5px;">
 						<img src="images/boot.png" alt="icon" style="align-items:center;padding-left:100px"/>
 							<h3 style="text-align: center">Bootsrap</h3>
 					</div>
@@ -178,50 +279,151 @@
 				
 				</div>
 
-				<div  class="row">
+				<div  class="row" id="portfolioarea">
+				<h1 style="color: #00b4d8;font-weight: bolder;">. . . .</h1>
+				<h1 style="color: #00b4d8;">. . . .</h1>
 				
-					<div class="col">
-						<h1 class="text-dark" style="text-align: center">Portfolio</h1>
+					<div class="col" style="padding-top: 40px;">
+						<h1 class="text-light" style="text-align: center">Portfolio</h1>
 						<p class="text-info" style="text-align: center">Featured projects</p>
 					</div>	
 				</div>
 
-				<div  class="row">
+				<div  class="row" id="portfolio">
 				
-					<div class="col-lg">blue</div>
-					<div class="col-lg"> Blue</div>
-					<div class="col-lg"> Blue</div>
-				
-				</div>
-
-				<div  class="row">
-				
-					<div class="col-lg">blue</div>
-					<div class="col-lg"> Blue</div>
-					<div class="col-lg"> Blue</div>
-				
-				</div>
-
-				<div  class="row">
-				<div class="col-lg">education
+					<div class="col-lg" id="work">
+						<img src="images/pic4.jpeg" alt="project image" />
+						<div class="layer">
+							<h3>Social Media App</h3>
+							<p>The app connects you to the talented people around the world.Download it from play store</p>
+							<a href="#"><i class="fas fa-external-link-alt"></i></a>
+						</div>
 					</div>
-					<div class="col-lg">experiences</div>	
-				</div>
-
-				<div  class="row">
-				<div class="col-lg">hero
+					<div class="col-lg" id="work">
+						<img src="images/ecom.jpeg.jpg" alt="project image" style="width:400px"/>
+						<div class="layer">
+							<h3>online shopping App</h3>
+							<p>The app connects you to the best matchfit around the world.Download it from play store</p>
+							<a href="#"><i class="fas fa-external-link-alt"></i></a>
+						</div>
 					</div>
-					<div class="col-lg">testimonial</div>	
+					<div class="col-lg" id="work">
+						<img src="images/pic3.jpeg" alt="project image" />
+						<div class="layer">
+							<h3>Online academy App</h3>
+							<p>The app connects you to the talented people around the world.Download it from play store</p>
+							<a href="#"><i class="fas fa-external-link-alt"></i></a>
+						</div>
+					</div>
+						
+				</div>
+					<a href="#" class="seemore">See More</a>				
+
+				<div  class="row text-light" >
+				<div class="col-lg" style="text-align: center;padding:20px;margin:20px">
+					<div class="education"> 
+						<h1> <i class="fa-solid fa-user-graduate"></i>Education</h1>
+						<br>
+						<p><i class="fa-light fa-award"></i>Master of Chemistry <br><span>2021 - 2024</span></p>
+						<span>2021 - 2024</span>
+						<br>
+
+						<p><i class="fa-light fa-award"></i>Honours of Chemistry <br><span>2016 - 2020</span></p>
+
+						<br>
+						
+						<p><i class="fa-light fa-award"></i>Secondary school certificate <br><span>2008 - 2014</span></p>
+						
+					</div>
+					</div>
+					<div class="col-lg" style="background-color:;text-align: center;">
+						<div class="experiences"> 
+						<h1> <i class="fa-solid fa-file-lines"></i>Experiences</h1>
+						<br>
+						<p><i class="fa-solid fa-file-lines"></i>Frontend developer <br><span>2023 - 2024</span></p>
+						<span>2021 - 2024</span>
+						<br>
+
+						<p><i class="fa-solid fa-file-lines"></i>Web App developer<br><span>2022 - 2023</span></p>
+
+						<br>
+						
+						<p><i class="fa-solid fa-file-lines"></i>Backend developer <br><span>2021 - 2022</span></p>
+						
+					</div>
+					</div>	
+				</div>
+				<hr>
+				<div  class="row" style="background-color:#03045e;">
+				<div class="col-lg" >
+					<img src="images/offimg.png" alt="profile image" style="width:70%; background-position: center;background-size: cover;padding-bottom: 20px;" class="rounded-circle"/>
+					</div>
+					<div class="col-lg">
+						<div>
+							<p style="padding-bottom: 0px;color:#00b4d8;text-align: center;">Why Choose Me</p>
+							<h1 style="padding-bottom: 40px;color:white;text-align: center;">My Expertise Area</h1>
+						</div>
+							<div class="progress" role="progressbar" aria-label="Animated striped example" aria-valuenow="95" aria-valuemin="0" aria-valuemax="100" style="margin-bottom: ;-bottom: 20px;">
+  <div class="progress-bar progress-bar-striped progress-bar-animated" style="width: 95%">
+  	<h4>Web Design</h4>
+  </div>
+</div>
+<br>
+		<div class="progress" role="progressbar" aria-label="Animated striped example" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100" style="margin-bottom: ;-bottom: 20px;">
+  <div class="progress-bar progress-bar-striped progress-bar-animated" style="width: 85%;">
+  	<h4>Mobile App</h4>
+  </div>
+</div>
+<br>
+			<div class="progress" role="progressbar" aria-label="Animated striped example" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100" style="margin-bottom: ;-bottom: 20px;">
+  <div class="progress-bar progress-bar-striped progress-bar-animated" style="width: 100%">
+  	<h4>Frontend</h4>
+  </div>
+</div>
+<br>
+			<div class="progress" role="progressbar" aria-label="Animated striped example" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100" style="margin-bottom: 20px;">
+  <div class="progress-bar progress-bar-striped progress-bar-animated" style="width: 90%">
+  	<h4>Backend</h4>
+  </div>
+</div>
+					</div>	
 				</div>
 
-				<div  class="row">
+				<div  class="row" id="contactme">
 				
-					<div class="col">contact</div>	
-				</div>
+					<div class="col">
+						<div style="padding:70px 60px;color:#fff;text-align: center;">
+							<h1>Contact Me</h1>
+							<p>Interested in hiring me for your project or just want to say hi? You can fill in the contact form below or send me an email to <span><a href="#" style="text-decoration: none;color:#00b4d8;"><i class="fas fa-paper-plane"></i>chiracheal5@gmail.com</a></span></p>
+							<p><i class="fas fa-phone-square-alt"></i>08166239095</p>
+					<p>Want to get connected? Follow me on the social channels below.</p>
+											<div class="socialicons">
+						<a href="#"><i class="fab fa-facebook"></i></a>
+						<a href="#"><i class="fab fa-twitter-square"></i></a>
+						<a href="#"><i class="fab fa-linkedin"></i></a>
+						<a href="#"><i class="fab fa-youtube"></i></a>
+						<a href="#"><i class="fab fa-instagram"></i></a>
+					</div>	
+						</div>
 
-				<div  class="row">
+					</div>
+
+				</div>
+				<div style="text-align: center;"><!-- Button trigger modal -->
+			<button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal" >
+  				Get in touch
+			</button></div>
+
+				<div  class="row" >
 				
-					<div class="col">footer</div>	
+					<div class="col">
+					<div class="footer" style="text-align: center; padding-top: 40px;padding-bottom:20px;background:linear-gradient(rgba(0,0,0,0.6), #00B4D8);">
+						<img src="images/rlogo.png" alt="logo image" style="width:40px; "/>
+				<p> <a href="terms.html" style="color:#fff;text-decoration: none;">Terms and Conditions</a></p>
+				<p><a href="policy.html" style="color:#fff;text-decoration: none;">Privacy policy</a></p>
+				<p class="copyrite text-light">Copyright &#169;2024 -Racheal Chi. All rights reserved.</p>
+				</div>
+					</div>	
 				</div>
 			</div>
 
@@ -294,7 +496,7 @@
 <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasExample" aria-labelledby="offcanvasExampleLabel">
   <div class="offcanvas-header" style="background-color:#03045E; color:white;">
     <h5 class="offcanvas-title" id="offcanvasExampleLabel">Racheal Chi</h5>
-    <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+    <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close" style="background-color: #fff;"></button>
   </div>
   <div class="offcanvas-body" style="background-color:#CAF0F8;">
     <div>
@@ -305,9 +507,66 @@
     <div >
     	<p class="text-dark">Hi, my name is Racheal Chi and i'm a software developer. Welcome to my personal website!</p>
     </div>
-
     <div>
-    	
+    	<ul class="navbar-nav me-auto mb-2 mb-lg-0">
+      	<li class="nav-item">
+      		<a class="btn btn-outline" data-bs-toggle="offcanvas" href="#offcanvasExample" role="button" aria-controls="offcanvasExample">
+  <img src="images/rlogo.png" alt="logo image" style="width:30px; margin-right: 100px;"/>
+</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link active" aria-current="page" href="#main_container" style="color:#00B4D8;">Home</a>
+        </li>
+
+        <li class="nav-item">
+          <a class="nav-link" href="#aboutarea"style="color:#00B4D8;">About</a>
+        </li>
+
+        <li class="nav-item">
+          <a class="nav-link" href="#portfolioarea"style="color:#00B4D8;">Portfolio</a>
+        </li>
+
+        <li class="nav-item">
+          <a class="nav-link" href="#contactme"style="color:#00B4D8;">Contact</a>
+        </li>
+      </ul>
+    </div>
+    <div>
+    	<div  class="row" id="contactme">
+				
+					<div class="col">
+						<div style="padding:70px 60px;color:#000000;text-align: center;">
+							<h1>Contact Me</h1>
+							<p>Interested in hiring me for your project or just want to say hi? You can fill in the contact form below or send me an email to <span><a href="#" style="text-decoration: none;color:#00b4d8;"><i class="fas fa-paper-plane"></i>chiracheal5@gmail.com</a></span></p>
+							<p><i class="fas fa-phone-square-alt"></i>08166239095</p>
+					<p>Want to get connected? Follow me on the social channels below.</p>
+											<div class="socialicons">
+						<a href="#"><i class="fab fa-facebook"></i></a>
+						<a href="#"><i class="fab fa-twitter-square"></i></a>
+						<a href="#"><i class="fab fa-linkedin"></i></a>
+						<a href="#"><i class="fab fa-youtube"></i></a>
+						<a href="#"><i class="fab fa-instagram"></i></a>
+					</div>	
+						</div>
+						<button class="btn btn-outline-primary text-primary" type="submit" style="background-color:#CAF0F8;">Hire Me</button>
+					</div>
+
+				</div>
+				<div style="text-align: center;"><!-- Button trigger modal -->
+			<button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal" >
+  				Get in touch
+			</button></div>
+
+				<div  class="row" >
+				
+					<div class="col">
+					<div class="footer" style="text-align: center; padding-top: 40px;padding-bottom:20px;background:linear-gradient(rgba(0,0,0,0.6), #00B4D8);">
+						<img src="images/rlogo.png" alt="logo image" style="width:40px; "/>
+				<p> <a href="terms.html" style="color:#fff;text-decoration: none;">Terms and Conditions</a></p>
+				<p><a href="policy.html" style="color:#fff;text-decoration: none;">Privacy policy</a></p>
+				<p class="copyrite text-light">Copyright &#169;2024 -Racheal Chi. All rights reserved.</p>
+				</div>
+					</div>	
     </div>
      
   </div>
@@ -337,7 +596,7 @@
   <div class="modal-dialog">
     <div class="modal-content">
       <div class="modal-header">
-        <h5 class="modal-title" id="exampleModalLabel">Registration Form</h5>
+        <h5 class="modal-title" id="exampleModalLabel">Contact Form</h5>
         <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
       </div>
       <div class="modal-body">
@@ -346,12 +605,12 @@
 			
 	</div><div class="form-floating">
 				<input type="firstname" name="fistname" id="firstname" class="form-control" placeholder="Enter your firstname"/>
-			<label for="firstname" class="col-sm-2 col-form-label"> FIRSTNAME
+			<label for="firstname" class="col-sm-2 col-form-label">firstname
 			</label>
 			</div>
 			<div class="form-floating">
 				<input type="surname" name="fistname" id="surname" class="form-control" placeholder="Enter your surname"/>
-			<label for="surname" class="col-sm-2 col-form-label"> SURNAME
+			<label for="surname" class="col-sm-2 col-form-label"> surname
 			</label>
 			</div>
 
@@ -363,7 +622,7 @@
       </div>
       <div class="modal-footer">
         <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-        <button type="button" class="btn btn-primary">Register</button>
+        <button type="button" class="btn btn-primary">Submit</button>
       </div>
     </div>
   </div>
