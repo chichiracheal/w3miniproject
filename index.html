@@ -23,22 +23,23 @@
 	.nav-link{color:#OOOOOO;
 			font-weight: bolder;
 			margin-right:50px;}
-			.nav-link:hover{color:#E0AAFF;
+			.nav-link:hover{color:#00B4D8;
 			text-decoration:underline;
 			font-weight:bolder;}
-			#fullstack{text-shadow:3px 3px 2px #10002B;
+			#fullstack{text-shadow:3px 3px 2px #03045E;
 						font-size:3em;}
 		#main_container{background-image:linear-gradient(rgba(255,255,255,0.7),rgba(231,207,228,0.7)), url("images/light.png");
 			background-repeat:no-repeat;}
 			div{ min-height:50px;border:1px solid red;}
 
-			.dropdown-menu li a:hover{color:#10002B;
+			.dropdown-menu li a:hover{color:#03045E;
 			text-decoration:underline;
 			font-weight:bolder;}
-			#fullstack{text-shadow:3px 3px 2px lightgreen;
+			#fullstack{text-shadow:3px 3px 2px lightblue;
 						font-size:3em;}
-						#inlink{color:#5A189A;
+						#inlink{color:#00B4D8;
      	text-decoration: none;}
+     	#skills{justify-content: space-around;}
 
 	</style>
 </head>
@@ -62,7 +63,7 @@
 </a>
         </li>
         <li class="nav-item">
-          <a class="nav-link active" aria-current="page" href="mywebsiteindex.html" style="color:#5A189A;">Home</a>
+          <a class="nav-link active" aria-current="page" href="mywebsiteindex.html" style="color:#00B4D8;">Home</a>
         </li>
 
         <li class="nav-item">
@@ -81,16 +82,16 @@
             Services
           </a>
           <ul class="dropdown-menu">
-            <li><a class="dropdown-item" href="#">frontend</a></li>
-            <li><a class="dropdown-item" href="#">backend</a></li>
+            <li><a class="dropdown-item" href="#">Basic</a></li>
+            <li><a class="dropdown-item" href="#">Standard</a></li>
             <li><hr class="dropdown-divider"></li>
-            <li><a class="dropdown-item" href="#">Something else here</a></li>
+            <li><a class="dropdown-item" href="#">Premium</a></li>
           </ul>
         </li>
       </ul>
       <form class="d-flex" role="search">
         <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-        <button class="btn btn-outline-success" type="submit" style="background-color:#5A189A;">Search</button>
+        <button class="btn btn-outline-primary" type="submit" style="background-color:darkblue;">Search</button>
 
 
       </form>
@@ -108,7 +109,7 @@
 				<h3>Hi, welcome to my personal website</h3>
 				<p>I'm a Lagos-based software developer</p>
 				<p>I can help you solve a problem,build a project or grow existing project.</p>
-				<button class="btn btn-outline-success text-success" type="submit" style="background-color:lightgreen;">Hire Me</button>
+				<button class="btn btn-outline-primary text-primary" type="submit" style="background-color:#CAF0F8;">Hire Me</button>
 					</div>
 					<div class="col-lg">
 						<img src="images/boldimg.png" alt="profile image" style="width:100%; padding-left: 100px;margin-right: 50px;" class="rounded-circle"/>
@@ -118,45 +119,71 @@
 				
 				<div  class="row">
 				
-					<div class="col" style="background-color: darkseagreen;">
-						<h1>About</h1>
-						<hr style="color:#5A189A;width: 200px;border:3px solid #5A189A">
-						<h1 style="text-align: center;">Racheal Chi</h1>
-				<h2 style="text-align: center;">Software developer</h2>
-				<p style="padding:10px 60px;">I'm a software developer specialised in frontend and backend development for complex scalable web apps. I write about software development on <span><a href="#" id="inlink">my blog</a>. Want to know how I may help your project? Check out my project <a href="portfolio.html" id="inlink">portfolio</a> and online <a href="#" id="inlink">resume</a>.</span></p>
+					<div class="col" style="background-color: #03045E;">
+						<h1 class="text-light">About</h1>
+						<hr style="color:#CAF0F8;width: 200px;border:3px solid #CAF0F8">
+						<h1 style="text-align: center;color:white">Racheal Chi</h1>
+				<h2 style="text-align: center;color:white">Software developer</h2>
+				<p style="padding:10px 60px;" class="text-light">I'm a software developer specialised in frontend and backend development for complex scalable web apps. I write about software development on <span><a href="#" id="inlink">my blog</a>. Want to know how I may help your project? Check out my project <a href="portfolio.html" id="inlink">portfolio</a> and online <a href="#" id="inlink">resume</a>.</span></p>
 
-				<p style="justify-content: center;"><button class="btn btn-outline-dark fa fa-box" type="submit" style="background-color:#E0AAFF;">View Portfolio</button>
-				<button class="btn btn-outline-dark fa fa-book" type="submit" style="background-color:#5A189A;">View Resume</button></p>
+				<p style="justify-content: center;"><button class="btn btn-outline-dark fa fa-box" type="submit" style="background-color:#CAF0F8;">View Portfolio</button>
+				<button class="btn btn-outline-dark fa fa-book" type="submit" style="background-color:#00B4D8;">View Resume</button></p>
 
 					</div>	
 				</div>
 
-				<div  class="row">
+				<div  class="row" >
 				
-					<div class="col">my skills</div>	
+					<div class="col">
+						<h1 class="text-dark" style="text-align: center">My Skills</h1>
+					</div>	
+				</div>
+				
+				<div  class="row" id="skills">
+				
+					<div class="col-lg">
+						<img src="images/python.png" alt="icon" style="justify-content:center; padding-left:100px"/>
+						
+					</div>
+					<div class="col-lg" >
+								<img src="images/java.png" alt="icon" style="align-items:center;padding-left:100px"/>
+								<h3 style="text-align: center">Javascript</h3>
+					</div>
+					<div class="col-lg">
+							<img src="images/css.png" alt="icon" style="align-items:center;padding-left:100px"/>
+							<h3 style="text-align: center">Css</h3>
+					</div>
+				
 				</div>
 				
 				<div  class="row">
 				
-					<div class="col-lg">blue</div>
-					<div class="col-lg"> Blue</div>
-					<div class="col-lg"> Blue</div>
-				
-				</div>
-				
-				<div  class="row">
-				
-					<div class="col-lg col-md-6 ">black</div>
-					<div class="col-lg col-md-6"> Black</div>
-					<div class="col-lg col-md-6"> black</div>
-					<div class="col-lg col-md-6"> Black</div>
+					<div class="col-lg col-md-6 ">
+						<img src="images/boot.png" alt="icon" style="align-items:center;padding-left:100px"/>
+							<h3 style="text-align: center">Bootsrap</h3>
+					</div>
+					<div class="col-lg col-md-6">
+						<img src="images/ps.png" alt="icon" style="align-items:center;padding-left:100px"/>
+							<h3 style="text-align: center">Photoshop</h3>
+					</div>
+					<div class="col-lg col-md-6">
+						<img src="images/html.png" alt="icon" style="align-items:center;padding-left:100px"/>
+							<h3 style="text-align: center">Html</h3>
+					</div>
+					<div class="col-lg col-md-6">
+						<img src="images/word.png" alt="icon" style="align-items:center;padding-left:100px"/>
+							<h3 style="text-align: center">Wordpress</h3>
+					</div>
 					
 				
 				</div>
 
 				<div  class="row">
 				
-					<div class="col">portfolio</div>	
+					<div class="col">
+						<h1 class="text-dark" style="text-align: center">Portfolio</h1>
+						<p class="text-info" style="text-align: center">Featured projects</p>
+					</div>	
 				</div>
 
 				<div  class="row">
@@ -265,18 +292,18 @@
 
 <!-- offcarvas -->
 <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasExample" aria-labelledby="offcanvasExampleLabel">
-  <div class="offcanvas-header" style="background-color:#E0AAFF;">
+  <div class="offcanvas-header" style="background-color:#03045E; color:white;">
     <h5 class="offcanvas-title" id="offcanvasExampleLabel">Racheal Chi</h5>
     <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
   </div>
-  <div class="offcanvas-body" style="background-color:#10002B;">
+  <div class="offcanvas-body" style="background-color:#CAF0F8;">
     <div>
     	<img src="images/fullimg.png" class="rounded-circle" alt="image" style=" width:200px;margin-bottom: 50px;"/>
      
     </div>
 
     <div >
-    	<p class="text-light">Hi, my name is Racheal Chi and i'm a software developer. Welcome to my personal website!</p>
+    	<p class="text-dark">Hi, my name is Racheal Chi and i'm a software developer. Welcome to my personal website!</p>
     </div>
 
     <div>
